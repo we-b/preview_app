@@ -3,7 +3,7 @@
 <% @posts.each do |post| %>
   <div class="posted-content">
     <%= image_tag post.image %><br>
-    <%= post.content%><br>
+    <%= post.text%><br>
     <%= link_to '詳細', post_path(post.id)%>
   </div>
 <% end %>
